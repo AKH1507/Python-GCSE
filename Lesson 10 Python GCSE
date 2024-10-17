@@ -1,1 +1,65 @@
-
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AKH1507/codefez.github.io.student.clone/blob/main/Lesson%2010%20Python%20GCSE\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "avengers = [\"Captain America\", \"Thor\", \"The Hulk\", \"Black Widow\", \"Hawkeye\", \"Iron Man\"]\n",
+        "print(avengers)\n",
+        "avengers.append(\"Spiderman\")\n",
+        "print(avengers[0])\n",
+        "avengers1963 = []\n",
+        "avengers1963.append(\"Hank Pym\")\n",
+        "avengers1963.append(\"The Hulk\")\n",
+        "avengers1963.append(\"Iron Man\")\n",
+        "avengers1963.append(\"Thor\")\n",
+        "avengers1963.append(\"The Wasp\")\n",
+        "print(avengers1963)\n",
+        "print(f\"{avengers[4]} and {avengers[3]} often felt insecure because neither really had a special power! They definitely didn't want to tick off {avengers[2]} but felt that {avengers[0]} was too focused leading the team to notice there was a problem there. {avengers[5]} was often busy blowing his own trumpet and {avengers[1]} really wasn’t of this earth either. They felt that {avengers[6]} was probably very down to Earth but was still just a kid.\")"
+      ],
+      "metadata": {
+        "id": "GRLOKwQSqw-c",
+        "outputId": "e54b3451-861d-4a83-d34d-b39fc9abffe0",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Captain America', 'Thor', 'The Hulk', 'Black Widow', 'Hawkeye', 'Iron Man']\n",
+            "Captain America\n",
+            "['Hank Pym', 'The Hulk', 'Iron Man', 'Thor', 'The Wasp']\n",
+            "Hawkeye and Black Widow often felt insecure because neither really had a special power! They definitely didn't want to tick off The Hulk but felt that Captain America was too focused leading the team to notice there was a problem there. Iron Man was often busy blowing his own trumpet and Thor really wasn’t of this earth either. They felt that Spiderman was probably very down to Earth but was still just a kid.\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome to Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
