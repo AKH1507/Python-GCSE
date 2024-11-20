@@ -1,0 +1,79 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AKH1507/Python-GCSE/blob/main/Python%20Practice%20Question\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = int(input(\"What is your age?: \"))\n",
+        "gender = input(\"What is your gender? M or F: \")\n",
+        "if gender == \"F\":\n",
+        "  print(\"You are a female.\")\n",
+        "  pregnant = input(\"Are you a pregnant woman? Y or N:\")\n",
+        "  if pregnant == \"Y\":\n",
+        "    print(\"You are a pregnant woman.\")\n",
+        "  else:\n",
+        "    print(\"You are not a pregnant woman.\")\n",
+        "elif gender == \"M\":\n",
+        "  print(\"You are a male.\")\n",
+        "elif gender != \"F\" and gender != \"M\":\n",
+        "  print(\"Please put M for male or F for female\")\n",
+        "  quit()\n",
+        "dose = 0\n",
+        "if age < 20:\n",
+        "  dose = age * 0.1\n",
+        "else:\n",
+        "  dose = 2\n",
+        "if gender == \"M\":\n",
+        "  dose = dose * 0.5\n",
+        "else:\n",
+        "  dose = dose\n",
+        "if gender == \"F\" and pregnant == \"Y\" and dose > 1.5:\n",
+        "  dose = 1.5\n",
+        "print(f\"Your dose is {float(dose)}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dFrGE84VqWgD",
+        "outputId": "504129bd-1da7-49a5-ee8d-7169f7b56c79"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "What is your age?: 99\n",
+            "What is your gender? M or F: L\n",
+            "Please put M for male or F for female\n",
+            "Your dose is 2.0\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colab",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
