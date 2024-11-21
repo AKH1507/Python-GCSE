@@ -1,0 +1,149 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AKH1507/Python-GCSE/blob/main/Python%20Hi%20or%20Lo%20game\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Basic\")\n",
+        "import random\n",
+        "number = random.randint(1,10)\n",
+        "chances = 3\n",
+        "while chances != 0:\n",
+        "  guess = int(input(\"Guess the number between 1 and 10: \"))\n",
+        "  if guess == number:\n",
+        "    print(\"Well done, you guessed the number\")\n",
+        "    quit()\n",
+        "  else:\n",
+        "    chances = chances - 1\n",
+        "    if chances > 0:\n",
+        "      print(f\"WRONG!!! You have {chances} left\")\n",
+        "    else:\n",
+        "      print(\"You have 0 chances left. The game ends here. I hope you enjoyed.\")"
+      ],
+      "metadata": {
+        "id": "Kq9lhWvQVotc"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Intermediate\")\n",
+        "import random\n",
+        "score = 0\n",
+        "chances = 3\n",
+        "while chances != 0 or score != 10:\n",
+        "  number = random.randint(1,10)\n",
+        "  guess = \"wrong\"\n",
+        "  no = random.randint(1,10)\n",
+        "  while guess != \"higher\" and no > number or guess != \"lower\" and no < number or guess != \"same\" and no == number and chances != 0:\n",
+        "    print(number)\n",
+        "    guess = input(f\"Is the number higher, lower or the same as {number}: \")\n",
+        "    if guess == \"higher\" and no > number:\n",
+        "      print(\"You guessed right! +1 point\")\n",
+        "      score = score + 1\n",
+        "      print(f\"Your score is now {score}\")\n",
+        "    elif guess == \"lower\" and no < number:\n",
+        "      print(\"You guessed right! +1 point\")\n",
+        "      score = score + 1\n",
+        "      print(f\"Your score is now {score}\")\n",
+        "    elif guess == \"same\" and no == number:\n",
+        "      print(\"You guessed right! +1 point\")\n",
+        "      score = score + 1\n",
+        "      print(f\"Your score is now {score}\")\n",
+        "    else:\n",
+        "      chances = chances - 1\n",
+        "      print(f\"WRONG!!! You have {chances} left\")\n",
+        "    if chances == 0:\n",
+        "      print(\"You have 0 chances left. The game ends here. I hope you enjoyed.\")\n",
+        "      quit()\n",
+        "    elif score == 10:\n",
+        "      print(\"Well done! You have defeated the system with 10 points. I hope you enjoyed the game.\")"
+      ],
+      "metadata": {
+        "id": "PluWBNiaVrxU"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Advanced\")\n",
+        "import random\n",
+        "import math\n",
+        "score = 1\n",
+        "while math.floor(score) != 0:\n",
+        "  number = random.randint(1,10)\n",
+        "  guess = \"wrong\"\n",
+        "  no = random.randint(1,10)\n",
+        "  while guess != \"higher\" and no > number or guess != \"lower\" and no < number or guess != \"same\" and no == number and math.floor(score) != 0:\n",
+        "    print(number)\n",
+        "    guess = input(f\"Is the number higher, lower or the same as {number}: \")\n",
+        "    if guess == \"higher\" and no > number:\n",
+        "      DorH = input(\"You guessed right! Would you like to double or half your score (D or H)?: \")\n",
+        "      if DorH == \"D\":\n",
+        "        score = score * 2\n",
+        "      elif DorH == \"H\":\n",
+        "        score = score / 2\n",
+        "      print(f\"Your score is now {score}\")\n",
+        "    elif guess == \"lower\" and no < number:\n",
+        "      DorH = input(\"You guessed right! Would you like to double or half your score (D or H)?: \")\n",
+        "      if DorH == \"D\":\n",
+        "        score = score * 2\n",
+        "      elif DorH == \"H\":\n",
+        "        score = score / 2\n",
+        "      print(f\"Your score is now {score}\")\n",
+        "    elif guess == \"same\" and no == number:\n",
+        "      DorH = input(\"You guessed right! Would you like to double or half your score (D or H)?: \")\n",
+        "      if DorH == \"D\":\n",
+        "        score = score * 2\n",
+        "      elif DorH == \"H\":\n",
+        "        score = score / 2\n",
+        "      print(f\"Your score is now {score}\")\n",
+        "    else:\n",
+        "      print(f\"WRONG!!!\")\n",
+        "    if math.floor(score) == 0:\n",
+        "      print(\"You score is 0. The game ends here. I hope you enjoyed.\")\n",
+        "      quit()\n",
+        "    else:\n",
+        "      print(f\"Your score right now is {score}\")\n",
+        "    CorS = input(\"Would you like to continue or cashout (Y or N)?: \")\n",
+        "    if CorS == \"Y\":\n",
+        "      print(\"The game continues...\")\n",
+        "    elif CorS == \"N\":\n",
+        "      print(f\"Your total score was {score}. Now go to cash it out.\")\n",
+        "      quit()"
+      ],
+      "metadata": {
+        "id": "splfHFKAVu9M"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome to Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
