@@ -1,0 +1,208 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AKH1507/Python-GCSE/blob/main/Python%20Hi%20or%20Lo%20game\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Basic\")\n",
+        "import random\n",
+        "number = random.randint(1,10)\n",
+        "chances = 3\n",
+        "while chances != 0:\n",
+        "  guess = int(input(\"Guess the number between 1 and 10: \"))\n",
+        "  if guess == number:\n",
+        "    print(\"Well done, you guessed the number\")\n",
+        "    quit()\n",
+        "  else:\n",
+        "    chances = chances - 1\n",
+        "    if chances > 0:\n",
+        "      print(f\"WRONG!!! You have {chances} left\")\n",
+        "    else:\n",
+        "      print(\"You have 0 chances left. The game ends here. I hope you enjoyed.\")"
+      ],
+      "metadata": {
+        "id": "H6_6ZlB0C0Bc",
+        "outputId": "2d44fd6b-7df3-41c5-81e6-2070b8ba63ea",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 836
+        }
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Basic\n",
+            "Guess the number between 1 and 10: 1\n",
+            "WRONG!!! You have 9 left\n",
+            "Guess the number between 1 and 10: 2\n",
+            "WRONG!!! You have 8 left\n",
+            "Guess the number between 1 and 10: 3\n",
+            "WRONG!!! You have 7 left\n",
+            "Guess the number between 1 and 10: 4\n",
+            "WRONG!!! You have 6 left\n",
+            "Guess the number between 1 and 10: 5\n",
+            "WRONG!!! You have 5 left\n",
+            "Guess the number between 1 and 10: 6\n",
+            "Well done, you guessed the number\n",
+            "Guess the number between 1 and 10: 7\n",
+            "WRONG!!! You have 4 left\n",
+            "Guess the number between 1 and 10: 6\n",
+            "Well done, you guessed the number\n",
+            "Guess the number between 1 and 10: 6\n",
+            "Well done, you guessed the number\n",
+            "Guess the number between 1 and 10: 6\n",
+            "Well done, you guessed the number\n",
+            "Guess the number between 1 and 10: 6\n",
+            "Well done, you guessed the number\n",
+            "Guess the number between 1 and 10: 6\n",
+            "Well done, you guessed the number\n",
+            "Guess the number between 1 and 10: 6\n",
+            "Well done, you guessed the number\n",
+            "Guess the number between 1 and 10: 6\n",
+            "Well done, you guessed the number\n",
+            "Guess the number between 1 and 10: 6\n",
+            "Well done, you guessed the number\n",
+            "Guess the number between 1 and 10: 6\n",
+            "Well done, you guessed the number\n",
+            "Guess the number between 1 and 10: 6\n",
+            "Well done, you guessed the number\n",
+            "Guess the number between 1 and 10: \n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "ValueError",
+          "evalue": "invalid literal for int() with base 10: ''",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mValueError\u001b[0m                                Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-1-60302d28c056>\u001b[0m in \u001b[0;36m<cell line: 5>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0mchances\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;36m10\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;32mwhile\u001b[0m \u001b[0mchances\u001b[0m \u001b[0;34m!=\u001b[0m \u001b[0;36m0\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 6\u001b[0;31m   \u001b[0mguess\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Guess the number between 1 and 10: \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      7\u001b[0m   \u001b[0;32mif\u001b[0m \u001b[0mguess\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0mnumber\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      8\u001b[0m     \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Well done, you guessed the number\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mValueError\u001b[0m: invalid literal for int() with base 10: ''"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Intermediate\")\n",
+        "import random\n",
+        "score = 0\n",
+        "chances = 3\n",
+        "while chances != 0 or score != 10:\n",
+        "  number = random.randint(1,10)\n",
+        "  guess = \"wrong\"\n",
+        "  no = random.randint(1,10)\n",
+        "  while guess != \"higher\" and no > number or guess != \"lower\" and no < number or guess != \"same\" and no == number and chances != 0:\n",
+        "    print(number)\n",
+        "    guess = input(f\"Is the number higher, lower or the same as {number}: \")\n",
+        "    if guess == \"higher\" and no > number:\n",
+        "      print(\"You guessed right! +1 point\")\n",
+        "      score = score + 1\n",
+        "      print(f\"Your score is now {score}\")\n",
+        "    elif guess == \"lower\" and no < number:\n",
+        "      print(\"You guessed right! +1 point\")\n",
+        "      score = score + 1\n",
+        "      print(f\"Your score is now {score}\")\n",
+        "    elif guess == \"same\" and no == number:\n",
+        "      print(\"You guessed right! +1 point\")\n",
+        "      score = score + 1\n",
+        "      print(f\"Your score is now {score}\")\n",
+        "    else:\n",
+        "      chances = chances - 1\n",
+        "      print(f\"WRONG!!! You have {chances} left\")\n",
+        "    if chances == 0:\n",
+        "      print(\"You have 0 chances left. The game ends here. I hope you enjoyed.\")\n",
+        "      quit()\n",
+        "    elif score == 10:\n",
+        "      print(\"Well done! You have defeated the system with 10 points. I hope you enjoyed the game.\")"
+      ],
+      "metadata": {
+        "id": "ANVFFsKLGdKv"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Advanced\")\n",
+        "import random\n",
+        "import math\n",
+        "score = 1\n",
+        "while math.floor(score) != 0:\n",
+        "  number = random.randint(1,10)\n",
+        "  guess = \"wrong\"\n",
+        "  no = random.randint(1,10)\n",
+        "  while guess != \"higher\" and no > number or guess != \"lower\" and no < number or guess != \"same\" and no == number and math.floor(score) != 0:\n",
+        "    print(number)\n",
+        "    guess = input(f\"Is the number higher, lower or the same as {number}: \")\n",
+        "    if guess == \"higher\" and no > number:\n",
+        "      DorH = input(\"You guessed right! Would you like to double or half your score (D or H)?: \")\n",
+        "      if DorH == \"D\":\n",
+        "        score = score * 2\n",
+        "      elif DorH == \"H\":\n",
+        "        score = score / 2\n",
+        "      print(f\"Your score is now {score}\")\n",
+        "    elif guess == \"lower\" and no < number:\n",
+        "      DorH = input(\"You guessed right! Would you like to double or half your score (D or H)?: \")\n",
+        "      if DorH == \"D\":\n",
+        "        score = score * 2\n",
+        "      elif DorH == \"H\":\n",
+        "        score = score / 2\n",
+        "      print(f\"Your score is now {score}\")\n",
+        "    elif guess == \"same\" and no == number:\n",
+        "      DorH = input(\"You guessed right! Would you like to double or half your score (D or H)?: \")\n",
+        "      if DorH == \"D\":\n",
+        "        score = score * 2\n",
+        "      elif DorH == \"H\":\n",
+        "        score = score / 2\n",
+        "      print(f\"Your score is now {score}\")\n",
+        "    else:\n",
+        "      print(f\"WRONG!!!\")\n",
+        "    if math.floor(score) == 0:\n",
+        "      print(\"You score is 0. The game ends here. I hope you enjoyed.\")\n",
+        "      quit()\n",
+        "    else:\n",
+        "      print(f\"Your score right now is {score}\")\n",
+        "    CorS = input(\"Would you like to continue or cashout (Y or N)?: \")\n",
+        "    if CorS == \"Y\":\n",
+        "      print(\"The game continues...\")\n",
+        "    elif CorS == \"N\":\n",
+        "      print(f\"Your total score was {score}. Now go to cash it out.\")\n",
+        "      quit()"
+      ],
+      "metadata": {
+        "id": "zCLUWCNMOHJL"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome to Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
