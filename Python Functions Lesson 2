@@ -1,0 +1,395 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AKH1507/Python-GCSE/blob/main/Python%20Functions%20Lesson%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "tuXjdUHV_G2W"
+      },
+      "source": [
+        "# Task 1\n",
+        "Write a function called `age_verification` that passes through an argument (the user’s age)\n",
+        "If the user is below 18, it must state that they are too young, otherwise display that they are old enough to watch the movie."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sQPeWIT9_G2Y",
+        "outputId": "7d2a348d-becb-4d45-b268-9f3bb144ab99"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your age: 18\n",
+            "You're age is 18\n",
+            "You are old enough.\n"
+          ]
+        }
+      ],
+      "source": [
+        "def age_verification(age):\n",
+        "  print(f\"You're age is {age}\")\n",
+        "  if age >= 18:\n",
+        "    print(\"You are old enough.\")\n",
+        "  else:\n",
+        "    print(\"You are too young. Better luck next year.\")\n",
+        "age_verification(int(input(\"Enter your age: \")))"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "9YwZKvg4_G2Y"
+      },
+      "source": [
+        "# Task 2\n",
+        "If you remember last module we programmed a times table.\n",
+        "This task involves writing a times table like the one we did before.\n",
+        "In this example a number is passed through the function.\n",
+        "The function than creates a 10 times table with that number\n",
+        "\n",
+        "output should be\n",
+        "\n",
+        "1 x 1 = 1\n",
+        "\n",
+        "1 x 2 = 2\n",
+        "\n",
+        "etc"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aU6b_5RG_G2Z",
+        "outputId": "a27c53b1-a9c6-4df6-ef17-a6728cd5db1f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 5\n",
+            "1 x 5 = 5\n",
+            "2 x 5 = 10\n",
+            "3 x 5 = 15\n",
+            "4 x 5 = 20\n",
+            "5 x 5 = 25\n",
+            "6 x 5 = 30\n",
+            "7 x 5 = 35\n",
+            "8 x 5 = 40\n",
+            "9 x 5 = 45\n",
+            "10 x 5 = 50\n"
+          ]
+        }
+      ],
+      "source": [
+        "# add your implementation here\n",
+        "def tt(num):\n",
+        "  for i in range(1,11):\n",
+        "    print(f\"{i} x {num} = {i*num}\")\n",
+        "tt(int(input(\"Enter a number: \")))"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "bcF8XzWe_G2Z"
+      },
+      "source": [
+        "# Challenge 3\n",
+        "I have prewritten a code for you.\n",
+        "All you have to do is comment each section of the code to explain what it does.\n",
+        "\n",
+        "\n",
+        "[hang code](https://pastebin.com/LifL2R1A)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 408
+        },
+        "id": "X8AxYaSm_G2Z",
+        "outputId": "36c6010f-6afe-495c-e172-1300ad60f380"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1) Enter word\n",
+            "2) Play Game\n",
+            "3) Exit\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "KeyboardInterrupt",
+          "evalue": "Interrupted by user",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-19-1202b799f96b>\u001b[0m in \u001b[0;36m<cell line: 155>\u001b[0;34m()\u001b[0m\n\u001b[1;32m    154\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    155\u001b[0m \u001b[0;32mwhile\u001b[0m \u001b[0mmenuop\u001b[0m \u001b[0;34m!=\u001b[0m \u001b[0;36m3\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 156\u001b[0;31m     \u001b[0mmenuop\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mmenu\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    157\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0mmenuop\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    158\u001b[0m         \u001b[0mEnterWord\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m<ipython-input-19-1202b799f96b>\u001b[0m in \u001b[0;36mmenu\u001b[0;34m()\u001b[0m\n\u001b[1;32m     10\u001b[0m     \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"2) Play Game\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     11\u001b[0m     \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"3) Exit\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 12\u001b[0;31m     \u001b[0mchoice\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Choice: \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     13\u001b[0m     \u001b[0;32mreturn\u001b[0m \u001b[0mchoice\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     14\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36mraw_input\u001b[0;34m(self, prompt)\u001b[0m\n\u001b[1;32m    849\u001b[0m                 \u001b[0;34m\"raw_input was called, but this frontend does not support input requests.\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    850\u001b[0m             )\n\u001b[0;32m--> 851\u001b[0;31m         return self._input_request(str(prompt),\n\u001b[0m\u001b[1;32m    852\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_ident\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    853\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_header\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36m_input_request\u001b[0;34m(self, prompt, ident, parent, password)\u001b[0m\n\u001b[1;32m    893\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    894\u001b[0m                 \u001b[0;31m# re-raise KeyboardInterrupt, to truncate traceback\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 895\u001b[0;31m                 \u001b[0;32mraise\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Interrupted by user\"\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    896\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mException\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    897\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlog\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwarning\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Invalid Message:\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mexc_info\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m: Interrupted by user"
+          ]
+        }
+      ],
+      "source": [
+        "# Your implementation here\n",
+        "from sys import stdout\n",
+        "import re\n",
+        "\n",
+        "######################################################################\n",
+        "#Function for displaying the menu\n",
+        "######################################################################\n",
+        "def menu():\n",
+        "    print(\"1) Enter word\")\n",
+        "    print(\"2) Play Game\")\n",
+        "    print(\"3) Exit\")\n",
+        "    choice = int(input(\"Choice: \"))\n",
+        "    return choice\n",
+        "\n",
+        "######################################################################\n",
+        "#Procedure for getting the game word from the user\n",
+        "######################################################################\n",
+        "\n",
+        "def EnterWord():\n",
+        "    global gameword\n",
+        "    global displayword\n",
+        "    print()\n",
+        "    gameword = input(\"Please enter in word: \")\n",
+        "    for i in range(len(gameword)):\n",
+        "        displayword = displayword + \"*\"\n",
+        "    print()\n",
+        "\n",
+        "\n",
+        "######################################################################\n",
+        "# Function for getting a letter from the player\n",
+        "######################################################################\n",
+        "\n",
+        "def GetLetter():\n",
+        "    global LettersUsed\n",
+        "    valid = False\n",
+        "    while valid == False:\n",
+        "        letter = input(\"Please enter in a letter: \")\n",
+        "        if letter in LettersUsed:\n",
+        "            valid == False\n",
+        "            print(\"Invalid letter - please choose again\")\n",
+        "        else:\n",
+        "            valid = True\n",
+        "\n",
+        "    LettersUsed.append(letter)\n",
+        "    return letter\n",
+        "\n",
+        "######################################################################\n",
+        "#Procedure for displaying the game details\n",
+        "######################################################################\n",
+        "\n",
+        "def DisplayGame():\n",
+        "    global displayword\n",
+        "    global LetterUsed\n",
+        "    global Lives\n",
+        "    st = \"\"\n",
+        "\n",
+        "    print()\n",
+        "    print(\"Word to guess: \",displayword)\n",
+        "    print()\n",
+        "    print(\"Letters Used:\")\n",
+        "    for i in LettersUsed:\n",
+        "        stdout.write(i + \" \")\n",
+        "    print()\n",
+        "    print(\"Lives Left: \",Lives)\n",
+        "    print()\n",
+        "\n",
+        "#####################################################################\n",
+        "# Procedure to check the letter against the word\n",
+        "#####################################################################\n",
+        "\n",
+        "def CheckWord(game,let):\n",
+        "    global displayword\n",
+        "    global Lives\n",
+        "\n",
+        "    if let in game:\n",
+        "        s = list(displayword)\n",
+        "\n",
+        "        for i in re.finditer(let,game):\n",
+        "            s[i.start()] = let\n",
+        "        displayword = \"\".join(s)\n",
+        "    else:\n",
+        "        Lives = Lives -1\n",
+        "\n",
+        "\n",
+        "\n",
+        "#####################################################################\n",
+        "# Procedure to check if the play has won\n",
+        "#####################################################################\n",
+        "\n",
+        "def CheckWin(dis,game,lives):\n",
+        "    global win\n",
+        "    global lose\n",
+        "\n",
+        "    if dis == game:\n",
+        "        win = True\n",
+        "\n",
+        "    if Lives == 0:\n",
+        "        lose = True\n",
+        "\n",
+        "#####################################################################\n",
+        "# Procedure to show end results\n",
+        "#####################################################################\n",
+        "\n",
+        "def ShowResults(lose,win):\n",
+        "    if win == True:\n",
+        "        print(\"Congratulations you have won.  Press Enter to continue\")\n",
+        "    elif lose == True:\n",
+        "        print(\"Unlucky you have lose.  Press Enter to continue\")\n",
+        "\n",
+        "    input()\n",
+        "\n",
+        "\n",
+        "\n",
+        "#####################################################################\n",
+        "#Procedure to Play the game\n",
+        "#####################################################################\n",
+        "\n",
+        "def PlayGame():\n",
+        "    global displayword\n",
+        "    global gameword\n",
+        "    global lose\n",
+        "    global win\n",
+        "    global LettersUsed\n",
+        "    global Lives\n",
+        "\n",
+        "    while lose == False and win == False:\n",
+        "        DisplayGame()\n",
+        "        letter = GetLetter()\n",
+        "        CheckWord(gameword,letter)\n",
+        "        CheckWin(displayword,gameword,Lives)\n",
+        "        DisplayGame()\n",
+        "\n",
+        "    ShowResults(lose,win)\n",
+        "    gameword = \"\"\n",
+        "    lose = False\n",
+        "    win = False\n",
+        "    LettersUsed = list()\n",
+        "    Lives = 5\n",
+        "    displayword = \"\"\n",
+        "\n",
+        "\n",
+        "####################################################################\n",
+        "#main program\n",
+        "####################################################################\n",
+        "\n",
+        "menuop = 0\n",
+        "gameword = \"\"\n",
+        "displayword = \"\"\n",
+        "lose = False\n",
+        "win = False\n",
+        "LettersUsed = [\"\"]\n",
+        "Lives = 5\n",
+        "\n",
+        "\n",
+        "while menuop != 3:\n",
+        "    menuop = menu()\n",
+        "    if menuop == 1:\n",
+        "        EnterWord()\n",
+        "        print(gameword)\n",
+        "        print(displayword)\n",
+        "    elif menuop == 2:\n",
+        "        PlayGame()"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "g8fue17Z_G2a"
+      },
+      "source": [
+        "# Task 4\n",
+        "Write a function to convert temperatures from Fahrenheit to Celsius. The function should take one integer parameter (the temperature in Fahrenheit) and return a real/float result (the temperature in Celsius). The formula for conversion is:\n",
+        "\n",
+        "Centigrade = ( Fahrenheit – 32 ) * ( 5/9 )\n",
+        "\n",
+        "[helpsheet](https://drive.google.com/open?id=1VrB8DVuUMmwNJsFMIB0OxMly5w3I1vcL)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KHmb8CPC_G2a",
+        "outputId": "8e4d4c83-2828-43e7-836c-707018280f1d"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a temperature in fahrenheit: 64\n",
+            "The temperature in degrees celcius is: 17.77777777777778\n"
+          ]
+        }
+      ],
+      "source": [
+        "def temp(t):\n",
+        "  Centigrade = float((t - 32)*(5/9))\n",
+        "  print(f\"The temperature in degrees celcius is: {float(Centigrade)}\")\n",
+        "temp(int(input(\"Enter a temperature in fahrenheit: \")))"
+      ]
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.12.4"
+    },
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
