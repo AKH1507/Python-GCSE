@@ -1,0 +1,101 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AKH1507/Python-GCSE/blob/main/Python%20GCSE%20Functions%20Lesson%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "def areas(base, height):\n",
+        "  which_area = input(\"Which area would you like to find out? Triangle, rectangle or circle?: \")\n",
+        "  if which_area == \"triangle\":\n",
+        "   area = (base*height)/2\n",
+        "   print(f\"The area of the triangle is {area}\")\n",
+        "  if which_area == \"rectangle\":\n",
+        "   area = (base*height)\n",
+        "   print(f\"The area of the rectangle is {area}\")\n",
+        "  if which_area == \"circle\":\n",
+        "   pi = math.pi\n",
+        "   area = pi * ((base/2)*(base/2))\n",
+        "   print(f\"The area of the circle is {area}\")\n",
+        "areas(int(input(\"Enter a base length: \")), int(input(\"Enter a height: \")))"
+      ],
+      "metadata": {
+        "id": "8RWVMocmVYZk",
+        "outputId": "32562a6b-3cea-46b2-d575-385e0211bffa",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a base length: 2\n",
+            "Enter a height: 8\n",
+            "Which area would you like to find out? Triangle, rectangle or circle?: triangle\n",
+            "The area of the triangle is 8.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def number(n1, n2, n3, n4):\n",
+        "  x = n1\n",
+        "  q = n1*n2\n",
+        "  y = n3*n2\n",
+        "  z = n4*n3\n",
+        "  w = x*q*y*z\n",
+        "  print(f\"The first number is {x}. The second number is {n2}. The third number is {q}. The fourth number is {y}. The fith number is {z}. The last number is {w}.\")\n",
+        "number(int(input(\"Enter a number:\")), int(input(\"Enter another number: \")), int(input(\"Enter another number: \")), int(input(\"Enter another number: \")))"
+      ],
+      "metadata": {
+        "id": "hNQwauLFWkou",
+        "outputId": "1a7fd9bd-c007-4786-f8f0-d2fe3a8d6aeb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number:2\n",
+            "Enter another number: 6\n",
+            "Enter another number: 1\n",
+            "Enter another number: 8\n",
+            "The first number is 2. The second number is 6. The third number is 12. The fourth number is 6. The fith number is 8. The last number is 1152.\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome to Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
