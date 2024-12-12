@@ -1,0 +1,93 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AKH1507/Python-GCSE/blob/main/Python%20GCSE%20Functions%20Lesson%204\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "suits = ['\\u2660', '\\u2665', '\\u2663', '\\u2666']\n",
+        "numbers = [\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"Jack\",\"Queen\",\"King\",\"Ace\"]\n",
+        "play = input(\"Would you like to play Blackjack? Y or N: \")\n",
+        "def blackjack():\n",
+        " score1 = 0\n",
+        " score2 = 0\n",
+        " while score1 < 21 and score2 < 21:\n",
+        "  cont = \"hit\"\n",
+        "  while cont == \"hit\":\n",
+        "   c1_s = random.choice(suits)\n",
+        "   c1_n = random.choice(numbers)\n",
+        "   if c1_n in [\"Jack\", \"Queen\", \"King\"]:\n",
+        "     number_value1 = 10\n",
+        "   elif c1_n == \"Ace\" and score1 < 11:\n",
+        "     number_value1 = 1\n",
+        "   elif c1_n == \"Ace\" and score1 >= 11:\n",
+        "     number_value1 = 11\n",
+        "   else:\n",
+        "     number_value1 = int(c1_n)\n",
+        "   score1 = score1 + number_value1\n",
+        "  c2_s = random.choice(suits)\n",
+        "  c2_n = random.choice(numbers)\n",
+        "  if c2_n in [\"Jack\", \"Queen\", \"King\"]:\n",
+        "    number_value2 = 10\n",
+        "  elif c2_n == \"Ace\" and score2 < 11:\n",
+        "    number_value2 = 1\n",
+        "  elif c2_n == \"Ace\" and score2 >= 11:\n",
+        "    number_value2 = 11\n",
+        "  else:\n",
+        "    number_value2 = int(c2_n)\n",
+        "\n",
+        "  score2 = score2 + number_value2\n",
+        "  print(f\"You got the {c1_n} of {c1_s}.\")\n",
+        "  print(f\"Your score is {score1}.\")\n",
+        "  print(f\"I got the {c2_n} of {c2_s}\")\n",
+        "  print(f\"My score is {score2}\")\n",
+        "  if score1 < 21:\n",
+        "   cont = input(\"Would you like to hit or stick?: \")\n",
+        "  elif score1 > 21:\n",
+        "   print(\"You lost because your score went over 21!\")\n",
+        "   quit()\n",
+        "  if score2 > 21:\n",
+        "    print(\"I lose because I got over 21.\")\n",
+        " if score1 == 21:\n",
+        "   print(\"You got 21! You win!\")\n",
+        " elif score1 > 21:\n",
+        "   print(\"Better luck next year.\")\n",
+        " elif score2 > 21:\n",
+        "  print(\"Congraulations!\")\n",
+        " else:\n",
+        "  print(\"It's a tie!\")\n",
+        "while play == \"Y\":\n",
+        "  blackjack()\n",
+        "  play = input(\"Would you like to play again? Y or N: \")"
+      ],
+      "metadata": {
+        "id": "MvRJmsU9dxRz"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome to Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
