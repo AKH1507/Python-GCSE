@@ -1,0 +1,73 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AKH1507/Python-GCSE/blob/main/Python%20Dictionaries\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "player = {\n",
+        "    'name':\"A Mulla\",\n",
+        "    'male':True,\n",
+        "    'shirtNo':6,\n",
+        "    'position':'CM',\n",
+        "    'preferedFoot':'either',\n",
+        "}\n",
+        "player.update({\n",
+        "    'shooting':12,\n",
+        "    'pace':9,\n",
+        "    'tackling':16,\n",
+        "    'skill':18,\n",
+        "    'looks':'Damn Fine! 😎'\n",
+        "    })\n",
+        "print(player)\n",
+        "\n",
+        "player['pace'] = 7\n",
+        "print(player)\n",
+        "\n",
+        "player.pop('looks')\n",
+        "print(player)"
+      ],
+      "metadata": {
+        "id": "y6d2w73zZAxt",
+        "outputId": "402f3d58-1d3c-485a-b45e-b127766327c1",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'name': 'A Mulla', 'male': True, 'shirtNo': 6, 'position': 'CM', 'preferedFoot': 'either', 'shooting': 12, 'pace': 9, 'tackling': 16, 'skill': 18, 'looks': 'Damn Fine! 😎'}\n",
+            "{'name': 'A Mulla', 'male': True, 'shirtNo': 6, 'position': 'CM', 'preferedFoot': 'either', 'shooting': 12, 'pace': 7, 'tackling': 16, 'skill': 18, 'looks': 'Damn Fine! 😎'}\n",
+            "{'name': 'A Mulla', 'male': True, 'shirtNo': 6, 'position': 'CM', 'preferedFoot': 'either', 'shooting': 12, 'pace': 7, 'tackling': 16, 'skill': 18}\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome to Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
